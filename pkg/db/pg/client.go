@@ -2,7 +2,7 @@ package pg
 
 import (
 	"context"
-	"github.com/f1xend/platform-common/pkg/db/db"
+	"github.com/f1xend/platform-common/pkg/db_old/db"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/pkg/errors"
 )
@@ -14,7 +14,7 @@ type pgClient struct {
 func New(ctx context.Context, dsn string) (db.Client, error) {
 	dbc, err := pgxpool.Connect(ctx, dsn)
 	if err != nil {
-		return nil, errors.Errorf("failed to coonect to db: %v", err)
+		return nil, errors.Errorf("failed to coonect to db_old: %v", err)
 	}
 	return &pgClient{
 		masterDBC: &pg{dbc: dbc},

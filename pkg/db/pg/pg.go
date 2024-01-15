@@ -3,8 +3,8 @@ package pg
 import (
 	"context"
 	"fmt"
-	"github.com/f1xend/platform-common/pkg/db/db"
-	"github.com/f1xend/platform-common/pkg/db/db/prettier"
+	"github.com/f1xend/platform-common/pkg/db_old/db"
+	"github.com/f1xend/platform-common/pkg/db_old/db/prettier"
 	"github.com/georgysavva/scany/pgxscan"
 	"github.com/jackc/pgconn"
 	"github.com/jackc/pgx/v4"
