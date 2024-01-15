@@ -2,8 +2,8 @@ package transaction
 
 import (
 	"context"
-	"github.com/f1xend/platform-common/pkg/db_old/db"
-	"github.com/f1xend/platform-common/pkg/db_old/db/pg"
+	"github.com/f1xend/platform-common/pkg/db"
+	"github.com/f1xend/platform-common/pkg/db/pg"
 	"github.com/jackc/pgx/v4"
 	"github.com/pkg/errors"
 )
