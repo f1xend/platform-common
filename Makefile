@@ -5,3 +5,6 @@ install-deps:
 
 lint:
 	GOBIN=$(LOCAL_BIN) golangci-lint run ./... --config .golangci.pipeline.yaml
+
+test:
+	go test
